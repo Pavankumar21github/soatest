@@ -15,11 +15,11 @@ jobs:
         uses: Parasoft/run-soatest-action@master
         with:
           installDir: D:\Parasoft_SOAtest_Virtualize_2024.1
-          soatestWorkspace: ${{ github.workspace }}/soatest
+          soatestWorkspace: D:\actions-runner-soatest\_workspace\soatest
           testConfig: user://Example Configuration
-          settings: soatest/license.properties
+          settings: soatest\license.properties
           resource: TestAssets
-          report: ${{ github.workspace }}/soatest/reports
+          report: D:\actions-runner-soatest\_workspace\soatest\soatest\reports
           reportFormat: xml,html
           convertReportToXUnit: true
 
@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: reports
-          path: ${{ github.workspace }}/soatest/reports
+          path: D:\actions-runner-soatest\_workspace\soatest\soatest\reports
 
   publish:
     name: Publish Reports
@@ -52,7 +52,7 @@ jobs:
         if: always()
         with:
           files: |
-            ${{ github.workspace }}/soatest/reports/report-xunit.xml
-            ${{ github.workspace }}/soatest/reports/report.xml
-            ${{ github.workspace }}/soatest/reports/report_dev1.html
-            ${{ github.workspace }}/soatest/reports/report.html
+            D:\actions-runner-soatest\_workspace\soatest\soatest\reports\report-xunit.xml
+            D:\actions-runner-soatest\_workspace\soatest\soatest\reports\report.xml
+            D:\actions-runner-soatest\_workspace\soatest\soatest\reports\report_dev1.html
+            D:\actions-runner-soatest\_workspace\soatest\soatest\reports\report.html
