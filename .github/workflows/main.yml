@@ -21,16 +21,16 @@ jobs:
       - name: Run local action
         uses: Parasoft/run-soatest-action@master
         with:
-          installDir: ‪D:/Parasoft_SOAtest_Virtualize_2024.1
-          soatestWorkspace: ${{ github.workspace }}/soatest/soatest
-          testConfig: builtin://Example Configuration
-          settings: soatest/license.properties
+          installDir: ‪D:\Parasoft_SOAtest_Virtualize_2024.1
+          soatestWorkspace: D:\actions-runner-soatest\_workspace\soatest
+          testConfig: builtin:\\Example Configuration
+          settings: soatest\license.properties
  
       - name: Upload report artifact
         uses: actions/upload-artifact@v4
         with:
           name: reports
-          path: soatest/reports
+          path: soatest\reports
  
   publish:
     name: Publish Reports
