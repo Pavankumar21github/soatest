@@ -53,3 +53,6 @@ jobs:
         with:
           files: |
             soatest\reports\report-xunit.xml
+            soatest\reports\report.xml
+            soatest\reports\report_dev1.html
+            soatest\reports\report.html
