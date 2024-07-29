@@ -22,7 +22,9 @@ jobs:
         uses: Parasoft/run-soatest-action@master
         with:
           installDir: ‪D:/Parasoft_SOAtest_Virtualize_2024.1
-          soatestWorkspace: 'soatest'
+          soatestWorkspace: ${{ github.workspace }}/soatest
+          testConfig: builtin://Example Configuration
+          settings: soatest/license.properties
  
       - name: Upload report artifact
         uses: actions/upload-artifact@v4
