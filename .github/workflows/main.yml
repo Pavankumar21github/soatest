@@ -16,7 +16,7 @@ jobs:
         with:
           installDir: D:\Parasoft_SOAtest_Virtualize_2024.1
           soatestWorkspace: D:\actions-runner-soatest\_workspace\soatest
-          testConfig: builtin://Example Configuration
+          testConfig: user://Example Configuration
           settings: soatest\license.properties
           resource: TestAssets
           report: reports
