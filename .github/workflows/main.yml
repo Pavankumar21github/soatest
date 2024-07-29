@@ -51,5 +51,5 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action/windows@v2
         if: always()
         with:
-          path : D:\actions-runner-soatest\_workspace\soatest\soatest\soatest\reports
+          XUNIT_FILES: D:\actions-runner-soatest\_workspace\soatest\soatest\soatest\reports\*.xml
             
