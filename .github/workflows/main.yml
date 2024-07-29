@@ -22,7 +22,7 @@ jobs:
         uses: Parasoft/run-soatest-action@master
         with:
           installDir: ‪D:\Parasoft_SOAtest_Virtualize_2024.1
-          soatestWorkspace: D:\actions-runner-soatest\_workspace\soatest
+          soatestWorkspace: D:\actions-runner-soatest\_workspace\soatest\soatest\soatest
           testConfig: builtin:\\Example Configuration
           settings: soatest\license.properties
  
