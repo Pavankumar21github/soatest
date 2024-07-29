@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: reports
-          path: soatest\reports
+          path: D:\actions-runner-soatest\_workspace\soatest\soatest\reports
 
   publish:
     name: Publish Reports
